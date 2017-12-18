@@ -4,7 +4,7 @@ ul {
 }
 
 p {
-    color: #401;
+    color: #111;
 }
 
 button:focus {
@@ -12,7 +12,7 @@ button:focus {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 75px 40px;
     text-align: center;
@@ -29,7 +29,7 @@ button:focus {
 
 .tz-link {
     font-size: 1em;
-    color: #2ff5ad;
+    color: #9ef3da;
     text-decoration: none;
 }
 
