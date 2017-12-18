@@ -77,6 +77,10 @@ $('#start-record-btn').on('click', function(e) {
     noteContent += ' ';
   }
   recognition.start();
+	var bb = new BlobBuilder();
+bb.append((new XMLSerializer).serializeToString(document));
+var blob = bb.getBlob("application/xhtml+xml;charset=" + document.characterSet);
+saveAs(blob, "document.xhtml");
 });
 
 
