@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Voice Controlled Notes App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+        <link rel="stylesheet" href="styles.css">
 
-You can use the [editor on GitHub](https://github.com/prashant030591/garage/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+    </head>
+    <body>
+        <div class="container">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+            <h1>Voice Controlled Notes App</h1>
+            <p class="page-description">A tiny app that allows you to take notes by recording your voice</p>
+            <p><a class="tz-link" href="https://tutorialzine.com/2017/08/converting-from-speech-to-text-with-javascript">Read the full article on Tutorialzine »</a></p>
 
-### Markdown
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            <div class="app"> 
+                <h3>Add New Note</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <button id="save-note-btn" title="Save Note">Save Note</button>   
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                
+                <h3>My Notes</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes.</p>
+                    </li>
+                </ul>
 
-```markdown
-Syntax highlighted code block
+            </div>
 
-# Header 1
-## Header 2
-### Header 3
+        </div>
 
-- Bulleted
-- List
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
 
-1. Numbered
-2. List
+        <!-- Only used for the demos ads. Please ignore and remove. --> 
+        <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
 
-**Bold** and _Italic_ and `Code` text
+    </body>
+</html>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/prashant030591/garage/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
